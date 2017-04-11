@@ -16,22 +16,22 @@ export default class App extends Component
           <div>
             <button className="btn btn-default" onClick={e => this.setState({display: !this.state.display})}>change</button>
           </div>
-          <div>
+          <div className="form-group">
             <input type="text" className="form-control"/>
           </div>
-          <div>
+          <div className="form-group">
             <input type="text" className="form-control"/>
           </div>
-          <div>
+          <div className="form-group">
             <input type="text" className="form-control"/>
           </div>
-          <div>
+          <div className="form-group">
             <input type="text" className="form-control"/>
           </div>
-          <div>
+          <div className="form-group">
             <input type="text" className="form-control"/>
           </div>
-          <div>
+          <div className="form-group">
             <input type="text" className="form-control"/>
           </div>
         </div>
@@ -43,31 +43,41 @@ export default class App extends Component
                 <div>
                   <button className="btn btn-default" onClick={e => this.setState({display: !this.state.display})}>back</button>
                 </div>
-                <select className="form-control">
-                  <option>1st-1</option>
-                  <option>1st-2</option>
-                  <option>1st-3</option>
-                </select>
-                <select className="form-control">
-                  <option>2nd-1</option>
-                  <option>2nd-2</option>
-                  <option>2nd-3</option>
-                </select>
-                <select className="form-control">
-                  <option>3rd-1</option>
-                  <option>3rd-2</option>
-                  <option>3rd-3</option>
-                </select>
-                <select className="form-control">
-                  <option>4th-1</option>
-                  <option>4th-2</option>
-                  <option>4th-3</option>
-                </select>
-                <select className="form-control">
-                  <option>5th-1</option>
-                  <option>5th-2</option>
-                  <option>5th-3</option>
-                </select>
+                <div className="form-group">
+                  <select className="form-control">
+                    <option>1st-1</option>
+                    <option>1st-2</option>
+                    <option>1st-3</option>
+                  </select>
+                </div>
+                <div className="form-group">
+                  <select className="form-control">
+                    <option>2nd-1</option>
+                    <option>2nd-2</option>
+                    <option>2nd-3</option>
+                  </select>
+                </div>
+                <div className="form-group">
+                  <select className="form-control">
+                    <option>3rd-1</option>
+                    <option>3rd-2</option>
+                    <option>3rd-3</option>
+                  </select>
+                </div>
+                <div className="form-group">
+                  <select className="form-control">
+                    <option>4th-1</option>
+                    <option>4th-2</option>
+                    <option>4th-3</option>
+                  </select>
+                </div>
+                <div className="form-group">
+                  <select className="form-control">
+                    <option>5th-1</option>
+                    <option>5th-2</option>
+                    <option>5th-3</option>
+                  </select>
+                </div>
               </div>
             )
           }

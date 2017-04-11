@@ -41,8 +41,8 @@ gulp.task('watch-sass', function() {
   gulp.watch(['src/sass/*.scss', 'src/sass/**/*.scss']);
 });
 
-gulp.task('build-example', function() {
-  var config = require('./example/webpack.config.js');
+gulp.task('build-docs', function() {
+  var config = require('./docs/webpack.config.js');
   webpack(config, function(err, stats) {
     //notifier
     if (stats.compilation.errors.length) {
@@ -66,4 +66,4 @@ gulp.task('build-example', function() {
 });
 
 
-gulp.task('default', ['build-sass', 'build-example'])
+gulp.task('default', ['build-sass', 'build-docs'])
