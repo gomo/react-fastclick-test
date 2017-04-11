@@ -29,6 +29,7 @@
     "gulp-uglify": "^2.1.2",
     "gulp-util": "^3.0.7",
     "node-notifier": "^4.5.0",
+    "react-fastclick": "^3.0.1",
     "webpack": "^1.13.3"
   }
 }

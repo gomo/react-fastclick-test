@@ -1,9 +1,10 @@
-import {Template} from '../index.es6';
-
+import {App} from '../index.es6';
+import initReactFastclick from 'react-fastclick';
+initReactFastclick();
 
 window.onload = () => {
-  var template = ReactDOM.render(
-    <Template />,
+  ReactDOM.render(
+    <App />,
     document.getElementById('wrapper')
   );
 }

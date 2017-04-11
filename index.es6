@@ -1,3 +1,3 @@
-import Template from './src/js/components/Template';
+import App from './src/js/components/App';
 
-export {Template}
+export {App}
