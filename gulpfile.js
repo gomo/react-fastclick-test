@@ -11,9 +11,9 @@ var uglify = require('gulp-uglify');
 gulp.task('build-sass', function() {
   return gulp.src(['src/sass/*.scss', 'src/sass/**/*.scss'])
     .pipe(compass({
-      css: 'dist/css',
+      css: 'docs/css',
       sass: 'src/sass',
-      image: 'dist/img',
+      image: 'docs/img',
       import_path: ["src/sass"]
     }))
     .on('error', function(error){
@@ -23,7 +23,7 @@ gulp.task('build-sass', function() {
       });
       this.emit('end');
     })
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('docs/css'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cleanCss())
     .on('error', function(error){
@@ -33,7 +33,7 @@ gulp.task('build-sass', function() {
       });
       this.emit('end');
     })
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('docs/css'))
     ;
 });
 
