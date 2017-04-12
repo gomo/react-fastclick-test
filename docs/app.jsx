@@ -1,5 +1,5 @@
 import {App} from '../index.es6';
-import initReactFastclick from 'react-fastclick';
+import initReactFastclick from '../../react-fastclick';
 initReactFastclick();
 
 window.onload = () => {
